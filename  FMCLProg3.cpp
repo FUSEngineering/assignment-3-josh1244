@@ -7,7 +7,7 @@
 #include "FMCLDate.h"
 
 using namespace std;
-
+ 
 int main() 
 {
     //init variables

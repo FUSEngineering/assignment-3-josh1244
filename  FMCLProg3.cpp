@@ -28,7 +28,7 @@ int main()
    myDate.setDateName(theName); // adds theName into myDate
 
 //Set the first date
-    cout << "Please enter first date (dd mm yyyy): ";
+    cout << "Please enter first date (mm dd yyyy): ";
     cin >> month >> day >> year;
    myDate.setMonth(month); // sets the month
    myDate.setDay(day); // sets the day
@@ -41,7 +41,7 @@ int main()
    myDate2.setDateName(theName); // adds theName into myDate2
 
 //Set the second date
-    cout << "Please enter second date (dd mm yyyy): ";
+    cout << "Please enter second date (mm dd yyyy): ";
     cin >> month >> day >> year;
    myDate2.setMonth(month); // sets the month
    myDate2.setDay(day); // sets the day
@@ -51,8 +51,10 @@ int main()
     //display the dates back
 
 //Use displayDate to show the date
- myDate.displayDate();
-myDate2.displayDate();
+cout << "1. " << myDate.getDateName() << " is " << myDate.displayDate() << endl;
+cout << "2. " << myDate2.getDateName() << " is " << myDate2.displayDate() << endl;
+
+//myDate2.displayDate();
 
 
     return 0;

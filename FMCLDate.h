@@ -85,9 +85,11 @@ class Date //class
 
     
     //function that displays the date
-   void displayDate() const
+   std::string displayDate() const
     {
-        std::cout << "2. " << dateName << " is "<< month << "/" << day << "/" << year << std::endl;
+        std::string value =  "" + std::to_string(month) + "/" + std::to_string(day) + "/" + std::to_string(year);
+        return value;
+        //std::cout << dateName << " is "<< month << "/" << day << "/" << year << std::endl;
     }
 
 

@@ -16,8 +16,13 @@ int main()
     int day;
     int year;
 
+    Date testDate("Due Date" ,9 ,26 ,2022);
     Date myDate(theName ,month ,day ,year);
     Date myDate2(theName ,month ,day ,year);
+
+//test due date
+cout << "The  " << testDate.getDateName() << " is " << testDate.displayDate() << endl;
+
 
 
     //input names and dates
